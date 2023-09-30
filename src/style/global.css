@@ -1,0 +1,34 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Tektur', cursive;
+}
+
+.banner {
+    position: absolute;
+    color: yellow;
+    background-color: black;
+    clip-path: polygon(10% 0, 100% 0, 100% 20%, 100% 90%, 90% 100%, 0 100%, 0% 80%, 0 10%);
+    text-align: center;
+    width: fit-content;
+    width: 624px;
+    height: 369px;
+    top: 631px;
+    left: 976px;
+}
+
+.topBanner{
+    background-color: black;
+}
+
+.textLeft{
+    text-align: left;
+    padding: 30px;
+}

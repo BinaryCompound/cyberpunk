@@ -1,0 +1,35 @@
+---
+import "../style/global.css";
+import TopBanner from "../components/TopBanner.astro";
+import HeaderBackGround from "../components/HeaderBackGround.astro";
+import Banner from "../components/Banner.astro";
+import ButtonMoreInfo from "../components/ButtonMoreInfo.astro";
+---
+
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Inter&family=Source+Code+Pro&family=Tektur&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Cyberpunk</title>
+	</head>
+	<body>
+		<div class="topBanner">
+			<TopBanner />
+		</div>
+		<HeaderBackGround />
+		<div class="banner">
+			<div class="textLeft">
+				<Banner />
+			</div>
+			<ButtonMoreInfo />
+		</div>
+	</body>
+</html>
