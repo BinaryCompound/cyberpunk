@@ -1,0 +1,78 @@
+<h1>Играй и выигрывай!</h1>
+<p>
+    Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span
+        >Xbox Series X</span
+    >
+     или <span>Sony PlayStation 5!</span>
+    <br /> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша
+    будут подведены 1 февраля. Удачи! ;)
+</p>
+
+<main class="blankOrPicture">
+    <section>
+        <form action="" method="get" class="formNameEmail">
+            <div class="form-name">
+                <label for="name">Введите своё имя:</label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-email">
+                <label for="email">Введите свой email:</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+        </form>
+        <div class="form-example">
+            <button>Отправить</button>
+        </div>
+    </section>
+</main>
+
+<style>
+    .formNameEmail {
+        margin: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        color: white;
+        margin: 5px;
+        background-color: black;
+        border: 2px solid yellow;
+    }
+
+    button {
+        margin: 10px;
+        appearance: none;
+        -webkit-appearance: none;
+        padding: 10px;
+        border: none;
+        background-color: black;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    button:hover {
+        transform: 0.5s;
+        color: black;
+        background-color: yellow;
+    }
+
+    .blankOrPicture {
+        display: grid;
+        grid-template-columns: 1fr 1rem 1fr;
+    }
+
+    h1 {
+        color: white;
+        size: 62px;
+    }
+
+    p {
+        color: white;
+        size: 18px;
+    }
+    span {
+        color: aquamarine;
+    }
+</style>

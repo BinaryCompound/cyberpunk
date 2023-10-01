@@ -1,4 +1,5 @@
 .wraper-banner {
     display: flex;
     flex-direction: row-rewers;
+    position: absolute;
 }

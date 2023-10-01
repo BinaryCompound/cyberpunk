@@ -3,32 +3,83 @@ html {
 }
 
 body {
+    margin: 0;
     background-color: black;
     color: white;
     font-family: 'IBM Plex Mono', monospace;
     font-family: 'Inter', sans-serif;
     font-family: 'Source Code Pro', monospace;
     font-family: 'Tektur', cursive;
+    overflow-x: hidden;
+}
+
+.size-Icon {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.icones {
+    text-align: right;
+    padding-left: 1050px;
 }
 
 .banner {
     position: absolute;
+    border-radius: 8px;
     color: yellow;
     background-color: black;
     clip-path: polygon(10% 0, 100% 0, 100% 20%, 100% 90%, 90% 100%, 0 100%, 0% 80%, 0 10%);
     text-align: center;
-    width: fit-content;
-    width: 624px;
-    height: 369px;
-    top: 631px;
-    left: 976px;
+    width: 555px;
+    height: 270px;
+    top: 510px;
+    left: 907px;
 }
 
-.topBanner{
+.topBanner {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textLeft {
+    text-align: left;
+    padding: 30px;
+}
+
+.textBox {
+    width: 1500px;
+    height: 970px;
+    top: 888px;
+    position: absolute;
+    background-color: yellow;
+}
+
+.textBoxTwo {
+    width: 1500px;
+    height: 970px;
+    top: 1858px;
+    position: absolute;
     background-color: black;
 }
 
-.textLeft{
-    text-align: left;
-    padding: 30px;
+.blockDescription {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+.blockPromotion {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+.separator {
+    width: 100%;
+    height: 10px;
+    background-color: aquamarine;
+    border: 1px solid aquamarine;
 }

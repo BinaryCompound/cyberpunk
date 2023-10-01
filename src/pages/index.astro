@@ -4,6 +4,10 @@ import TopBanner from "../components/TopBanner.astro";
 import HeaderBackGround from "../components/HeaderBackGround.astro";
 import Banner from "../components/Banner.astro";
 import ButtonMoreInfo from "../components/ButtonMoreInfo.astro";
+import Description from "../components/Description.astro";
+import Promotion from "../components/Promotion.astro";
+import Screenshots from "../components/screenshots.astro";
+import { Icon } from "astro-icon";
 ---
 
 <html lang="ru">
@@ -23,6 +27,14 @@ import ButtonMoreInfo from "../components/ButtonMoreInfo.astro";
 	<body>
 		<div class="topBanner">
 			<TopBanner />
+			<div class="icones">
+				<Icon name="entypo-social:instagram" class="size-Icon" />
+				<Icon name="entypo-social:facebook" class="size-Icon" />
+				<Icon name="entypo-social:twitter" class="size-Icon" />
+				<Icon name="entypo-social:vk" class="size-Icon" />
+				<Icon name="entypo-social:youtube" class="size-Icon" />
+				<Icon name="logos:twitch" class="size-Icon" />
+			</div>
 		</div>
 		<HeaderBackGround />
 		<div class="banner">
@@ -30,6 +42,18 @@ import ButtonMoreInfo from "../components/ButtonMoreInfo.astro";
 				<Banner />
 			</div>
 			<ButtonMoreInfo />
+		</div>
+		<div class="textBox">
+			<div class="blockDescription">
+				<Description />
+				<Screenshots />
+			</div>
+		</div>
+		<div class="textBoxTwo">
+			<div class="separator"></div>
+			<div class="blockPromotion">
+				<Promotion />
+			</div>
 		</div>
 	</body>
 </html>
