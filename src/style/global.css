@@ -66,9 +66,26 @@ body {
     background-color: #000;
 }
 
+.textBoxThree {
+    width: 1980px;
+    height: 970px;
+    top: 2680px;
+    position: absolute;
+    background-color: #000;
+}
+
+.textBoxFour {
+    width: 1980px;
+    height: 970px;
+    top: 3500px;
+    position: absolute;
+    background-color: black;
+}
+
 .blockDescription {
     position: absolute;
-    left: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     top: 10px;
 }
 
