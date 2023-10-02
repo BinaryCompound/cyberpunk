@@ -51,19 +51,19 @@ body {
 }
 
 .textBox {
-    width: 1500px;
+    width: 1980px;
     height: 970px;
-    top: 888px;
+    top: 960px;
     position: absolute;
-    background-color: yellow;
+    background-color: #ff0;
 }
 
 .textBoxTwo {
-    width: 1500px;
+    width: 1980px;
     height: 970px;
     top: 1858px;
     position: absolute;
-    background-color: black;
+    background-color: #000;
 }
 
 .blockDescription {
