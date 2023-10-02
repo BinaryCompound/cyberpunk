@@ -1,3 +1,7 @@
+---
+import XboxPlaystation from "../../public/XboxPlayStation.jpeg";
+---
+
 <h1>Играй и выигрывай!</h1>
 <p>
     Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span
@@ -20,13 +24,52 @@
                 <input type="email" name="email" id="email" required />
             </div>
         </form>
+
+        <div class="addScreen">
+            <p>
+                Прикрепить скриншот <br />
+                 .jpg/.png/.pdf
+            </p>
+        </div>
+
         <div class="form-example">
             <button>Отправить</button>
         </div>
     </section>
+
+    <section class="padd">
+        <img src={XboxPlaystation.src} alt="Xbox series X and PlayStation 5" />
+    </section>
 </main>
 
 <style>
+    .padd {
+        padding-left: 43px;
+    }
+
+    img {
+        clip-path: polygon(
+            10% 0,
+            100% 0,
+            100% 20%,
+            100% 90%,
+            90% 100%,
+            0 100%,
+            0% 80%,
+            0 10%
+        );
+        width: 744px;
+        height: 379px;
+        border: 4px solid aquamarine;
+        border-radius: 8px;
+    }
+
+    .addScreen {
+        border: 3px dashed yellow;
+        text-align: center;
+        font-size: 22px;
+    }
+
     .formNameEmail {
         margin: 20px;
     }
@@ -60,7 +103,10 @@
 
     .blankOrPicture {
         display: grid;
-        grid-template-columns: 1fr 1rem 1fr;
+        grid-template-columns: 1fr 2rem 1fr;
+        align-items: center;
+        justify-items: start;
+        padding-top: 90px;
     }
 
     h1 {
