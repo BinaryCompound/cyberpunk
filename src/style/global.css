@@ -76,10 +76,18 @@ body {
 
 .textBoxFour {
     width: 1980px;
-    height: 970px;
+    height: 400px;
     top: 3500px;
     position: absolute;
     background-color: black;
+}
+
+.footerBox {
+    width: 1980px;
+    height: 111px;
+    top: 4055px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
 }
 
 .blockDescription {
