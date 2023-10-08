@@ -1,0 +1,24 @@
+---
+import Cyberbackground from "../../public/cyberpunk2077.png";
+import "../style/global.css";
+import Banner from "./Banner.astro";
+---
+
+<div class="title">
+    <img src={Cyberbackground.src} alt="">
+    <Banner />
+</div>
+
+<style>
+
+img{
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+    .title {
+        height: 100%;
+        background-color: black;
+    }
+</style>

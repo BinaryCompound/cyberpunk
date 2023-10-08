@@ -3,8 +3,9 @@ html {
 }
 
 body {
+
     margin: 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
     font-family: 'IBM Plex Mono', monospace;
     font-family: 'Inter', sans-serif;
@@ -14,98 +15,23 @@ body {
 }
 
 .size-Icon {
-    width: 25px;
-    height: 25px;
-    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    padding-left: 40px;
 }
 
 .icones {
-    text-align: right;
-    padding-left: 1050px;
+    padding-right: 320px;
 }
 
-.banner {
+@media screen and (max-width:600px) {
 
-    position: absolute;
-    border-radius: 8px;
-    color: yellow;
-    background-color: black;
-    clip-path: polygon(10% 0, 100% 0, 100% 20%, 100% 90%, 90% 100%, 0 100%, 0% 80%, 0 10%);
-    text-align: center;
-    width: 593px;
-    height: 300px;
-    top: 562px;
-    left: 1015px;
-}
+    .icones {
+        padding-bottom: 40px;
+        padding-right: 0;
+    }
 
-.topBanner {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.textLeft {
-    text-align: left;
-    padding: 30px;
-}
-
-.textBox {
-    width: 1980px;
-    height: 970px;
-    top: 960px;
-    position: absolute;
-    background-color: #ff0;
-}
-
-.textBoxTwo {
-    width: 1980px;
-    height: 970px;
-    top: 1931px;
-    position: absolute;
-    background-color: #000;
-}
-
-.textBoxThree {
-    width: 1980px;
-    height: 970px;
-    top: 2680px;
-    position: absolute;
-    background-color: #000;
-}
-
-.textBoxFour {
-    width: 1980px;
-    height: 400px;
-    top: 3500px;
-    position: absolute;
-    background-color: black;
-}
-
-.footerBox {
-    width: 1980px;
-    height: 111px;
-    top: 4055px;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-}
-
-.blockDescription {
-    position: absolute;
-    padding-left: 10%;
-    padding-right: 10%;
-    top: 10px;
-}
-
-.blockPromotion {
-    position: absolute;
-    left: 100px;
-    top: 40px;
-}
-
-.separator {
-    width: 100%;
-    height: 10px;
-    background-color: aquamarine;
-    border: 1px solid aquamarine;
+    .size-Icon {
+        padding-left: 10px;
+    }
 }

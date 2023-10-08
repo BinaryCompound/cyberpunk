@@ -1,16 +1,7 @@
 ---
+import Header from "../components/Header.astro";
+import Title from "../components/Title.astro";
 import "../style/global.css";
-import TopBanner from "../components/TopBanner.astro";
-import HeaderBackGround from "../components/HeaderBackGround.astro";
-import Banner from "../components/Banner.astro";
-import ButtonMoreInfo from "../components/ButtonMoreInfo.astro";
-import Description from "../components/Description.astro";
-import Promotion from "../components/Promotion.astro";
-import Advertising from "../components/Advertising.astro";
-import GameBuy from "../components/GameBuy.astro";
-import Footer from "../components/Footer.astro";
-import Screenshots from "../components/screenshots.astro";
-import { Icon } from "astro-icon";
 ---
 
 <html lang="ru">
@@ -28,7 +19,17 @@ import { Icon } from "astro-icon";
 		<title>Cyberpunk</title>
 	</head>
 	<body>
-		<div class="topBanner">
+		<header>
+			<Header />
+		</header>
+		<section>
+			<Title />
+		</section>
+		<footer></footer>
+	</body>
+</html>
+
+<!--<div class="topBanner">
 			<TopBanner />
 			<div class="icones">
 				<Icon name="entypo-social:instagram" class="size-Icon" />
@@ -39,42 +40,4 @@ import { Icon } from "astro-icon";
 				<Icon name="logos:twitch" class="size-Icon" />
 			</div>
 		</div>
-		<HeaderBackGround />
-		<div class="banner">
-			<div class="textLeft">
-				<Banner />
-			</div>
-			<ButtonMoreInfo />
-		</div>
-		<div class="textBox">
-			<div class="blockDescription">
-				<Description />
-				<Screenshots />
-			</div>
-		</div>
-		<div class="textBoxTwo">
-			<div class="separator"></div>
-			<div class="blockPromotion">
-				<Promotion />
-			</div>
-		</div>
-
-		<div class="textBoxThree">
-			<div class="separator"></div>
-			<div class="blockAdvertising">
-				<Advertising />
-			</div>
-		</div>
-		<div class="textBoxFour">
-			<div class="separator"></div>
-			<div class="blockGameBuy">
-				<GameBuy />
-			</div>
-		</div>
-		<div class="footerBox">
-			<div class="blockFooter">
-				<Footer />
-			</div>
-		</div>
-	</body>
-</html>
+		-->

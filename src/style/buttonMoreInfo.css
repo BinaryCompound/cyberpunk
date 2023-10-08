@@ -16,3 +16,9 @@ button:hover{
     color: black;
     background-color: yellow;
 }
+
+@media screen and (max-width: 600px) {
+    button{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,47 @@
+---
+import "../style/global.css";
+import { Icon } from "astro-icon";
+import CyberLogo from "../../public/logo.png";
+---
+
+<header>
+    <div class="header">
+        <img src={CyberLogo.src} alt="Cyberpunk Logo" />
+        <div class="icones">
+            <Icon name="entypo-social:instagram" class="size-Icon" />
+            <Icon name="entypo-social:facebook" class="size-Icon" />
+            <Icon name="entypo-social:twitter" class="size-Icon" />
+            <Icon name="entypo-social:vk" class="size-Icon" />
+            <Icon name="entypo-social:youtube" class="size-Icon" />
+            <Icon name="logos:twitch" class="size-Icon" />
+        </div>
+    </div>
+</header>
+
+<style>
+    img {
+        width: 200px;
+        height: 120px;
+        padding-left: 320px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        height: 120px;
+    }
+
+    @media screen and (max-width: 600px) {
+        img {
+            padding-left: 0;
+        }
+
+        .header {
+            flex-direction: column;
+            height: 200px;
+            text-align: center;
+        }
+    }
+</style>
