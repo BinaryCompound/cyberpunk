@@ -1,0 +1,75 @@
+---
+import "../style/global.css";
+import pictureOne from "../../public/1.jpg";
+import pictureTwo from "../../public/2.png";
+import pictureThree from "../../public/3.jpg";
+---
+
+<div class="text-image">
+    <div class="text-left">
+        <h1>Найт-Сити изменит тебя навсегда!</h1>
+        <h3>
+           <span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой
+            происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации
+            тела ценятся выше всего. Ты играешь за V, наёмника в поисках
+            устройства, позволяющего обрести бессмертие. Ты сможешь менять
+            киберимпланты, навыки и стиль игры своего персонажа, исследуя
+            открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя
+            окружает.
+        </h3>
+        <div class="box-image">
+            <img src={pictureOne.src} alt="" />
+            <img src={pictureTwo.src} alt=""  />
+            <img src={pictureThree.src} alt=""  />
+        </div>
+    </div>
+</div>
+
+<style>
+    h1 {
+        font-size: 45px;
+    }
+
+    h3 {
+    }
+
+    img {
+        padding: 20px;
+        height: 325px;
+        clip-path: polygon(
+            10% 0,
+            100% 0,
+            100% 20%,
+            100% 90%,
+            90% 100%,
+            0 100%,
+            0% 80%,
+            0 10%
+        );
+    }
+
+    .text-image {
+        padding: 10%;
+        height: 100%;
+        background-color: black;
+    }
+    .box-image {
+        display
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 600px){
+        img{
+            height: 155px;
+            padding: 15px;
+        }
+
+        .text-image{
+            padding: 5%;
+        }
+
+        .box-image{
+            text-align: center;
+        }
+    }
+</style>

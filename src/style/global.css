@@ -14,24 +14,10 @@ body {
     overflow-x: hidden;
 }
 
-.size-Icon {
-    width: 30px;
-    height: 30px;
-    padding-left: 40px;
-}
-
-.icones {
-    padding-right: 320px;
+span{
+    color: aqua;
 }
 
 @media screen and (max-width:600px) {
 
-    .icones {
-        padding-bottom: 40px;
-        padding-right: 0;
-    }
-
-    .size-Icon {
-        padding-left: 10px;
-    }
 }
