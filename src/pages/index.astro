@@ -2,7 +2,9 @@
 import Header from "../components/Header.astro";
 import Title from "../components/Title.astro";
 import Description from "../components/Description.astro";
+import Promotion from "../components/Promotion.astro";
 import "../style/global.css";
+const title = "Cyberpunk";
 ---
 
 <html lang="ru">
@@ -17,7 +19,7 @@ import "../style/global.css";
 		/>
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Cyberpunk</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<header>
@@ -29,11 +31,18 @@ import "../style/global.css";
 		<section>
 			<Description />
 		</section>
+		<section>
+			<Promotion />
+		</section>
 		<footer></footer>
 	</body>
 </html>
 
-<!--<div class="topBanner">
+<!--
+
+	старый вариант написания банненра
+
+	<div class="topBanner">
 			<TopBanner />
 			<div class="icones">
 				<Icon name="entypo-social:instagram" class="size-Icon" />

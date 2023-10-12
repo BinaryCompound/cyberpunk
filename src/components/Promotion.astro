@@ -1,0 +1,72 @@
+---
+import "../style/global.css";
+import XBOX from "../../public/XBOX.png";
+import PS5 from "../../public/PS5.png";
+---
+
+<div class="promo">
+    <h1>Играй и выигрывай!</h1>
+    <h3>
+        Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть
+        консоль <span>Xbox Series X</span> или <span>Sony PlayStation 5</span>!
+        Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша
+        будут подведены 1 февраля. Удачи! ;)
+    </h3>
+    <section class="text-images">
+        <div class="">
+            <form action="" class="form">
+                <p>
+                    <label for="name">Введите имя:</label>
+                    <input type="text" name="name" id="name" required />
+                </p>
+
+                <p>
+                    <label for="email">Введите почту:</label>
+                    <input type="email" name="email" id="email" required />
+                </p>
+            </form>
+            <button type="submit">Отправить</button>
+        </div>
+        <div class="">
+            <img src={XBOX.src} alt="XBOX" />
+            <img src={PS5.src} alt="PS5" />
+        </div>
+    </section>
+</div>
+
+<style>
+    img {
+        height: 200px;
+    }
+
+    .form {
+        display: table;
+    }
+
+    .form-info {
+        display: table-row;
+    }
+
+    label,
+    input {
+        display: table-cell;
+        margin-bottom: 10px;
+        background-color: yellow;
+        color: black;
+    }
+
+    label {
+        padding: 3px;
+    }
+
+    .text-images {
+        display: grid;
+        grid-template-columns: 1fr 2rem 1fr;
+    }
+
+    .promo {
+        padding: 10%;
+        height: 100%;
+        background-color: black;
+    }
+</style>
