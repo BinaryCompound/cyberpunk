@@ -1,0 +1,121 @@
+---
+import "../style/global.css";
+import { Icon } from "astro-icon";
+import Disks from "../../public/disk.png";
+---
+
+<div class="game-sale">
+    <section class="separation">
+        <div>
+            <img src={Disks.src} alt="" />
+        </div>
+
+        <div class="sale">
+            <h1>Купить игру Cyberpunk 2077</h1>
+            <br />
+            <p><span>В комплект входит:</span></p>
+            <br />
+            <ul>
+                <ol>
+                    <li>
+                        <Icon name="bi:record-circle" class="size-Icon" />Футляр
+                        с игровыми дисками
+                    </li>
+                    <li>
+                        <Icon name="bi:square-half" class="size-Icon" />Футляр с
+                        кодом для загрузки игры и дисками (pc)
+                    </li>
+                    <li>
+                        <Icon
+                            name="bi:card-image"
+                            class="size-Icon"
+                        />Справочник с информацией об игровом мире
+                    </li>
+                </ol>
+            </ul>
+            <br />
+            <p><span>Выберите платформу:</span></p>
+            <div class="items-center">
+                <Icon name="bi:xbox" class="size-Icon" />
+                <Icon name="bi:pc-display" class="size-Icon" />
+                <Icon name="bi:playstation" class="size-Icon" />
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+    .game-sale {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: black;
+        color: white;
+        height: 100%;
+    }
+
+    .sale {
+        padding-left: 10%;
+    }
+
+    .size-Icon {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        color: yellow;
+    }
+
+    .separation {
+        display: grid;
+        grid-template-columns: 1fr 60rem 1fr;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    img {
+        height: 630px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    ol {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        img {
+            height: 287px;
+        }
+
+        .separation {
+            display: block;
+        }
+
+        .sale {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .items-center {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        ul {
+            padding: 0;
+        }
+    }
+</style>

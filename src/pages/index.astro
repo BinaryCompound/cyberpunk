@@ -3,7 +3,10 @@ import Header from "../components/Header.astro";
 import Title from "../components/Title.astro";
 import Description from "../components/Description.astro";
 import Promotion from "../components/Promotion.astro";
+import Advertising from "../components/Advertising.astro";
+import Footer from "../components/Footer.astro";
 import "../style/global.css";
+import GameSale from "../components/GameSale.astro";
 const title = "Cyberpunk";
 ---
 
@@ -34,7 +37,16 @@ const title = "Cyberpunk";
 		<section>
 			<Promotion />
 		</section>
-		<footer></footer>
+		<section>
+			<Advertising />
+		</section>
+
+		<section>
+			<GameSale />
+		</section>
+		<footer>
+			<Footer/>
+		</footer>
 	</body>
 </html>
 

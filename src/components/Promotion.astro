@@ -41,6 +41,11 @@ import PS5 from "../../public/PS5.png";
         align-items: center;
         margin: 10px;
     }
+
+    h1 {
+        font-size: 40px;
+    }
+
     img {
         height: 300px;
         margin: 15px;
@@ -73,6 +78,10 @@ import PS5 from "../../public/PS5.png";
         padding: 3px;
     }
 
+    button{
+        font-size: 40px;
+    }
+
     .text-images {
         display: grid;
         grid-template-columns: 1fr 2rem 1fr;
@@ -84,8 +93,24 @@ import PS5 from "../../public/PS5.png";
         background-color: black;
     }
 
-    button {
-        font-size: 40px;
+
+    a {
+        text-decoration: none;
+        color: yellow;
+        border-radius: 4px;
+        background-color: black;
+        font-size: 30px;
+        border: none;
+        font-family: "IBM Plex Mono", monospace;
+        font-family: "Inter", sans-serif;
+        font-family: "Source Code Pro", monospace;
+        font-family: "Tektur", cursive;
+        transition: 0.5s;
+    }
+    a:hover {
+        transform: 0.5s;
+        color: yellow;
+        background-color: black;
     }
 
     @media screen and (max-width: 600px) {

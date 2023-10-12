@@ -1,0 +1,119 @@
+---
+import "../style/global.css";
+import "../style/buttonMoreInfo.css";
+import Monitor from "../../public/monitor.png";
+import HP from "../../public/hp-2 logo.png";
+import X from "../../public/Group 235.png";
+import CyberLogoBlack from "../../public/logo2.png";
+import { Icon } from "astro-icon";
+---
+
+<div class="advertisting">
+    <div>
+        <img src={Monitor.src} alt="" />
+        <div class="item-center">
+            <img src={HP.src} alt="" class="size-logo" />
+            <img src={X.src} alt="" class="size-X" />
+            <img src={CyberLogoBlack.src} alt="" class="size-logo" />
+        </div>
+    </div>
+
+    <div class="padd">
+        <h1>Полное погружение вместе с HP</h1>
+        <br />
+        <p>
+            Погрузись в современные экшен-игры с реалистичным изображением с
+            помощью монитора с диагональю 23,8 дюйма, созданном для отображения
+            максимально насыщенных цветов. Успевай реагировать на любые события
+            с временем отклика 1 мс и частотой в 144 Гц!
+        </p>
+        <br />
+        <ul>
+            <ol>
+                <li>
+                    <Icon name="ic:sharp-palette" class="size-Icon" />Яркие
+                    насыщенные цвета
+                </li>
+                <li>
+                    <Icon name="bi:stars" class="size-Icon" />Кристальная
+                    четкость изображения
+                </li>
+                <li>
+                    <Icon name="ion:game-controller" class="size-Icon" />Быстрые
+                    движения и плавный геймплей
+                </li>
+            </ol>
+        </ul>
+        <br />
+        <a href="">Подробнее</a>
+    </div>
+</div>
+
+<style>
+    .advertisting {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10%;
+        height: 100%;
+        background-color: yellow;
+        color: black;
+    }
+
+    .size-Icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icones {
+        padding-right: 320px;
+    }
+
+    .padd {
+        padding-left: 20px;
+    }
+
+    .item-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .size-logo {
+        height: 70px;
+    }
+    .size-X {
+        height: 15px;
+    }
+
+    img {
+        height: 420px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    ol {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        img {
+            height: 220px;
+        }
+
+        .advertisting {
+            display: block;
+        }
+        .size-logo {
+            height: 42px;
+        }
+    }
+</style>
