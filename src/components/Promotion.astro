@@ -27,7 +27,7 @@ import PS5 from "../../public/PS5.png";
             </form>
             <button type="submit">Отправить</button>
         </div>
-        <div class="">
+        <div class="column-image">
             <img src={XBOX.src} alt="XBOX" />
             <img src={PS5.src} alt="PS5" />
         </div>
@@ -35,8 +35,15 @@ import PS5 from "../../public/PS5.png";
 </div>
 
 <style>
+    .column-image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px;
+    }
     img {
-        height: 200px;
+        height: 300px;
+        margin: 15px;
     }
 
     .form {
@@ -49,10 +56,17 @@ import PS5 from "../../public/PS5.png";
 
     label,
     input {
+        font-size: 40px;
         display: table-cell;
         margin-bottom: 10px;
-        background-color: yellow;
-        color: black;
+        color: white;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid white;
+        background-color: transparent;
+        outline: none;
     }
 
     label {
@@ -68,5 +82,31 @@ import PS5 from "../../public/PS5.png";
         padding: 10%;
         height: 100%;
         background-color: black;
+    }
+
+    button {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .text-images {
+            text-align: center;
+        }
+
+        .column-image {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: end;
+            padding-top: 240px;
+        }
+
+        label,
+        input {
+            font-size: 20px;
+        }
+
+        img {
+            height: 200px;
+        }
     }
 </style>
