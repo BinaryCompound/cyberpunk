@@ -2,10 +2,13 @@
 import Cyberbackground from "../../public/cyberpunk2077.png";
 import "../style/global.css";
 import Banner from "./Banner.astro";
+import CyberA from "../../public/Cyber.jpg";
 ---
 
 <div class="title">
-    <img src={Cyberbackground.src} alt="">
+    <div class="background-image">
+        <img src={Cyberbackground.src} alt="">
+    </div>
     <Banner />
 </div>
 
@@ -17,8 +20,25 @@ img{
 
 }
 
+.background-image{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../public/Cyber.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
     .title {
         height: 100%;
         background-color: black;
     }
 </style>
+
+<script>
+    const images=[
+        ,
+    ]
+</script>
