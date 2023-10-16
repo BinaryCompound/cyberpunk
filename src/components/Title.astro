@@ -7,29 +7,27 @@ import CyberA from "../../public/Cyber.jpg";
 
 <div class="title">
     <div class="background-image">
-        <img src={Cyberbackground.src} alt="">
+        <img src={Cyberbackground.src} alt="" />
     </div>
     <Banner />
 </div>
 
 <style>
+    img {
+        background-repeat: no-repeat;
+        width: 100%;
+    }
 
-img{
-    background-repeat: no-repeat;
-    width: 100%;
-
-}
-
-.background-image{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../public/Cyber.jpg');
-    background-size: cover;
-    background-position: center;
-    transition: background-image 1s ease-in-out;
-}
+    .background-image {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../public/Cyber.jpg");
+        background-size: cover;
+        background-position: center;
+        transition: background-image 1s ease-in-out;
+    }
 
     .title {
         height: 100%;
@@ -38,7 +36,18 @@ img{
 </style>
 
 <script>
-    const images=[
-        ,
-    ]
+    const images = ["Cyber.jpg", "CyberTwo.png", "CyberThree.jpg"];
+
+    let currentIndex = 0;
+
+    // Функция для изменения фонового изображения
+    function changeBackgroundImage() {
+        document.querySelector(
+            ".background-image",
+        ).style.backgroundImage = `url(${images[currentIndex]})`;
+
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    setInterval(changeBackgroundImage, 5000);
 </script>
